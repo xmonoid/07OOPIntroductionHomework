@@ -1,5 +1,6 @@
-package com.tsystems.autotestuni.basic;
+package com.tsystems.autotestuni.advanced;
 
+import com.tsystems.autotestuni.basic.Point;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -25,9 +26,9 @@ public class SegmentTest {
     @Test
     void checkClass() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException,
             InstantiationException, IllegalAccessException {
-        Assertions.assertDoesNotThrow(() -> Class.forName("com.tsystems.autotestuni.basic.Segment"),
+        Assertions.assertDoesNotThrow(() -> Class.forName("com.tsystems.autotestuni.advanced.Segment"),
                 "Class Segment does not exist");
-        Class<?> cl = Class.forName("com.tsystems.autotestuni.basic.Segment");
+        Class<?> cl = Class.forName("com.tsystems.autotestuni.advanced.Segment");
         Class<?>[] types = {Point.class , Point.class};
         Assertions.assertDoesNotThrow(() -> cl.getDeclaredConstructor(types),
                 "Class Segment does not have an appropriate constructor");

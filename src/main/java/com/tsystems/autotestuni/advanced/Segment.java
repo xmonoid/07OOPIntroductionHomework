@@ -1,4 +1,6 @@
-package com.tsystems.autotestuni.basic;
+package com.tsystems.autotestuni.advanced;
+
+import com.tsystems.autotestuni.basic.Point;
 
 public class Segment {
 
